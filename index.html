@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tina Cantina | Bar-Restaurante de Cocina Mexicana de Autor</title>
+  <meta name="description" content="La Tina Cantina — bar-restaurante de cocina mexicana de autor, coctelería de mezcal, fuego y tradición. Descubre el menú, la barra y la historia de la casa.">
+  <meta name="keywords" content="bar restaurante mexicano, cantina, cocina de autor, mezcal, coctelería, tacos gourmet, La Tina Cantina, cocina mexicana CDMX">
+  <meta name="author" content="La Tina Cantina">
+ 
+  <!-- Open Graph / SEO social -->
+  <meta property="og:title" content="La Tina Cantina | Bar-Restaurante de Cocina Mexicana de Autor">
+  <meta property="og:description" content="La Tina Cantina — bar-restaurante de cocina mexicana de autor, coctelería de mezcal, fuego y tradición. Descubre el menú, la barra y la historia de la casa.">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:image" content="imagenes/menu/logo-nav.jpeg">
+ 
+  <link rel="icon" type="image/jpeg" href="imagenes/menu/logo-nav.jpeg">
+  <link rel="apple-touch-icon" href="imagenes/menu/logo-nav.jpeg">
+ 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Poppins:wght@300;400;500;600;700&family=Alex+Brush&display=swap" rel="stylesheet">
+ 
+  <!-- Font Awesome (solo iconografía) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+ 
+<!-- ============ LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <span class="loader__ring"></span>
+      <span class="loader__glyph">TC</span>
+    </div>
+    <p class="loader__text">Encendiendo el comal…</p>
+  </div>
+ 
+ 
+  <!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#inicio" class="navbar__brand">
+        <img src="imagenes/menu/logo-nav.jpeg" alt="La Tina Cantina" class="navbar__brand-logo" width="52" height="52">
+        <span class="navbar__brand-text">La Tina Cantina<small>Bar &amp; Cocina de Autor</small></span>
+      </a>
+ 
+      <nav class="navbar__nav" id="navMenu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#historia" class="nav-link">Historia</a></li>
+          <li><a href="#menu" class="nav-link">Menú</a></li>
+          <li><a href="#promociones" class="nav-link">Especialidades</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn--gold btn--small navbar__cta">Visítanos</a>
+      </nav>
+ 
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+ 
+  <main id="top">
+ 
+<section class="hero" id="inicio">
+      <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=2000&q=80');"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__sunburst" aria-hidden="true"></div>
+      <div class="hero__blob-magenta" aria-hidden="true"></div>
+      <div class="hero__blob-azure" aria-hidden="true"></div>
+      <div class="hero__embers" aria-hidden="true"></div>
+ 
+      <div class="hero__content fade-in">
+        <div class="hero__crest-wrap">
+          <img src="imagenes/menu/logo-nav.jpeg" alt="Emblema La Tina Cantina" class="hero__crest" width="132" height="132">
+        </div>
+        <p class="eyebrow eyebrow--center">Bar · Cantina · Cocina de autor</p>
+        <h1 class="hero__title">
+          Donde el fuego <span class="script">se vuelve</span> <span class="accent">memoria</span>
+        </h1>
+        <p class="hero__subtitle">
+          La Tina Cantina reinterpreta la cocina y la coctelería tradicional mexicana con técnica
+          contemporánea, maíz nixtamalizado, brasas y una barra de mezcales que cuenta su propia historia.
+        </p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--wine">Ver el menú</a>
+          <a href="#contacto" class="btn btn--outline">Visítanos</a>
+        </div>
+        <div class="hero__badges">
+          <div class="hero__badge"><i class="fa-solid fa-fire-burner"></i><span>Cocina de brasa</span></div>
+          <div class="hero__badge"><i class="fa-solid fa-martini-glass-citrus"></i><span>Barra de mezcal</span></div>
+          <div class="hero__badge"><i class="fa-solid fa-music"></i><span>Ambiente en vivo</span></div>
+          <div class="hero__badge"><i class="fa-solid fa-star"></i><span>Desde 2011</span></div>
+        </div>
+      </div>
+ 
+      <a href="#historia" class="hero__scroll" aria-label="Desplázate hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+<section class="story" id="historia">
+      <div class="story__blob-wine" aria-hidden="true"></div>
+      <div class="story__blob-gold" aria-hidden="true"></div>
+      <div class="container story__grid">
+        <div class="story__media reveal-left">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Mesa cálida iluminada con velas en La Tina Cantina" loading="lazy" width="1200" height="1500">
+          <div class="story__media-frame" aria-hidden="true"></div>
+          <div class="story__media-badge"><strong>2011</strong><span>Desde</span></div>
+        </div>
+ 
+        <div class="story__text reveal-right">
+          <p class="eyebrow">Nuestra historia</p>
+          <h2 class="section-title">De la tina de barro <span class="script">a la mesa</span></h2>
+                   <p>
+          Todo comenzó en una madrugada lluviosa. Entre sueños y ganas de algo propio, nació la idea de vender cerveza
+          afuera
+          de
+          casa, directo desde una tina.
+        </p>
+
+        <p>
+          Eran como las 2 de la mañana. Afuera llovía y adentro de la casa no cabía la idea que traía en la cabeza.
+        </p>
+
+        <p>
+          <strong>“¿Y si vendo cerveza en una tina afuera de mi casa?”</strong>
+        </p>
+
+        <p>
+          Lo dije en voz baja, como si decirlo fuerte lo fuera a romper. Hasta yo me reí de lo absurdo que sonaba. Al
+          día
+          siguiente lo conté y la gente también se rio. “Estás loco”, me dijeron. “¿Quién va a ir a comprar cerveza a la
+          calle,
+          en una tina?”
+        </p>
+
+        <p>
+          Pero había algo que no podían ver: las ganas. Las de levantarme algo mío. Las de darle a la gente un lugar
+          donde
+          soltar el peso del día y prender la risa.
+        </p>
+
+        <p>
+          Así empezó La Tina. Con frío calándome los huesos, con hielos que se derretían rápido, con latas sudando y con
+          el
+          corazón apretado esperando a ver si alguien pasaba. Hubo noches de silencio, de contar las gotas de lluvia en
+          lugar de
+          clientes, de pensar "esto no iba a funcionar" y tener ganas de tirar todo.
+        </p>
+
+        <p>
+          Pero también hubo una primera mesa. Dos amigos que se quedaron diez minutos más. Luego otra mesa. Luego un
+          "oye,
+          pásame tu número para la próxima". Y poco a poco, la risa empezó a ganarle al miedo.
+        </p>
+
+        <p>
+          Hoy, cuando cruzas la puerta y te pega la música, cuando ves la barra llena y un brindis que no estaba
+          planeado,
+          pienso en aquella madrugada. Pienso en el miedo que tuve y en las ganas que pudieron más.
+        </p>
+
+        <p>
+          La Tina no empezó con dinero. Empezó con una idea que a todos les pareció mala, con mucho trabajo, con
+          lágrimas de
+          frustración y con la necedad de no rendirme.
+        </p>
+
+        <p class="story-ending">
+          Aquí seguimos. Creando la excusa perfecta para que vuelvas a ver a los tuyos, para que levantes el vaso sin
+          razón y
+          para que, después de una gran noche, alguien diga:
+        </p>
+
+        <blockquote> 
+          “¿Te acuerdas de esa noche en Tina Cantina?”
+        </blockquote>
+ 
+          <div class="story__stats">
+            <div class="stat">
+              <span class="stat__number" data-count="13">0</span>
+              <span class="stat__label">Años de historia</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-count="48">0</span>
+              <span class="stat__label">Etiquetas de mezcal</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number" data-count="120">0</span>
+              <span class="stat__label">Recetas de familia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Divisor de firma: agave dibujado a mano -->
+      <div class="agave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1200 90" preserveAspectRatio="none">
+          <path class="agave-divider__line" d="M0,45 C150,10 250,80 400,45 C550,10 650,80 800,45 C950,10 1050,80 1200,45"/>
+        </svg>
+      </div>
+    </section>
+ 
+<section class="pillars" id="mision-vision-valores">
+      <div class="pillars__blob" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Lo que nos mueve</p>
+        <h2 class="section-title section-title--center">Tres raíces, <span class="script">una misma mesa</span></h2>
+ 
+        <div class="pillars__grid">
+          <article class="pillar-card reveal-up">
+            <div class="pillar-card__icon"><i class="fa-solid fa-fire"></i></div>
+            <h3>Misión</h3>
+            <p>Brindar a nuestros clientes una experiencia única de convivencia, ofreciendo alimentos y bebidas de excelente calidad, un servicio cálido y eficiente, y un ambiente lleno de diversión, seguridad y hospitalidad, convirtiendo cada visita en un momento para recordar.</p>
+          </article>
+ 
+          <article class="pillar-card pillar-card--featured reveal-up">
+            <div class="pillar-card__icon"><i class="fa-solid fa-eye"></i></div>
+            <h3>Visión</h3>
+            <p>Ser la cadena de cantinas más reconocida del sureste de México por la calidad de nuestro servicio, la innovación en nuestras experiencias, el compromiso de nuestro equipo y la preferencia de nuestros clientes, creciendo de manera rentable y sostenible.</p>
+          </article>
+ 
+          <article class="pillar-card reveal-up">
+            <div class="pillar-card__icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <h3>Valores</h3>
+            <ul class="values-list">
+              <li><i class="fa-solid fa-check"></i> Hospitalidad</li>
+              <li><i class="fa-solid fa-check"></i> Honestidad</li>
+              <li><i class="fa-solid fa-check"></i> Trabajo en equipo</li>
+              <li><i class="fa-solid fa-check"></i> Pasión por el servicio</li>
+              <li><i class="fa-solid fa-check"></i> Calidad</li>
+              <li><i class="fa-solid fa-check"></i> Respeto</li>
+              <li><i class="fa-solid fa-check"></i> Innovación</li>
+              <li><i class="fa-solid fa-check"></i> Responsabilidad</li>
+              <li><i class="fa-solid fa-check"></i> Compromiso</li>
+              <li><i class="fa-solid fa-check"></i> Diversión con responsabilidad</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<section class="menu-section" id="menu">
+      <div class="menu-section__blob" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Carta</p>
+        <h2 class="section-title section-title--center section-title--light">Nuestro <span class="script">menú</span></h2>
+        <p class="section-lead section-lead--light">Cuatro tiempos, un mismo hilo: maíz, brasa y mezcal.</p>
+ 
+        <div class="menu-tabs" role="tablist" aria-label="Categorías del menú">
+          <button class="menu-tab active" role="tab" aria-selected="true" data-tab="entradas"><i class="fa-solid fa-leaf"></i> Entradas</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-tab="fuertes"><i class="fa-solid fa-fire"></i> Platos fuertes</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-tab="postres"><i class="fa-solid fa-cookie-bite"></i> Postres</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-tab="bebidas"><i class="fa-solid fa-martini-glass-citrus"></i> Barra</button>
+        </div>
+ 
+        <div class="menu-panels">
+ 
+          <div class="menu-panel active" id="entradas" role="tabpanel">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Tostada de atún y aguacate</h4>
+                  <span class="menu-item__price">$185</span>
+                </div>
+                <p>Atún sellado, aguacate criollo, chile serrano y aceite de cilantro.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Esquites al carbón</h4>
+                  <span class="menu-item__price">$110</span>
+                </div>
+                <p>Elote de la milpa asado en brasa, mayonesa de chintextle y queso añejo.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Aguachile verde de camarón <i class="fa-solid fa-pepper-hot spice" title="Picante"></i></h4>
+                  <span class="menu-item__price">$210</span>
+                </div>
+                <p>Camarón de Sinaloa, chile serrano, pepino y cebolla morada curtida.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Sopa de tortilla ahumada</h4>
+                  <span class="menu-item__price">$130</span>
+                </div>
+                <p>Jitomate asado a leña, chile pasilla, aguacate y crema de rancho.</p>
+              </li>
+            </ul>
+          </div>
+ 
+          <div class="menu-panel" id="fuertes" role="tabpanel" hidden>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Mole negro de la casa <i class="fa-solid fa-pepper-hot spice" title="Picante"></i></h4>
+                  <span class="menu-item__price">$320</span>
+                </div>
+                <p>Receta de tres generaciones, veinte ingredientes, pechuga de rancho.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Costilla de res 12 horas</h4>
+                  <span class="menu-item__price">$395</span>
+                </div>
+                <p>Cocción lenta en brasas de mezquite, salsa borracha y tortillas de comal.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Pescado a la talla</h4>
+                  <span class="menu-item__price">$340</span>
+                </div>
+                <p>Pescado del día, adobo rojo, arroz de coco y ensalada de nopal.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Tacos de barbacoa de hoyo</h4>
+                  <span class="menu-item__price">$260</span>
+                </div>
+                <p>Borrego cocido bajo tierra por 8 horas, consomé y cebollitas asadas.</p>
+              </li>
+            </ul>
+          </div>
+ 
+          <div class="menu-panel" id="postres" role="tabpanel" hidden>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Chocoflan de abuela</h4>
+                  <span class="menu-item__price">$135</span>
+                </div>
+                <p>Cacao de Tabasco, caramelo quemado y sal de gusano.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Nieve de mezcal y mango</h4>
+                  <span class="menu-item__price">$120</span>
+                </div>
+                <p>Sorbete artesanal, reducción de mezcal joven y chile piquín.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Churros de tina</h4>
+                  <span class="menu-item__price">$115</span>
+                </div>
+                <p>Masa de maíz y trigo, canela, cajeta quemada.</p>
+              </li>
+            </ul>
+          </div>
+ 
+          <div class="menu-panel" id="bebidas" role="tabpanel" hidden>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Margarita de tamarindo y chile <i class="fa-solid fa-pepper-hot spice" title="Picante"></i></h4>
+                  <span class="menu-item__price">$165</span>
+                </div>
+                <p>Tequila blanco, tamarindo, sal de chile de árbol.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Flight de mezcal de la casa</h4>
+                  <span class="menu-item__price">$290</span>
+                </div>
+                <p>Tres destilados artesanales de Oaxaca, sal de gusano y naranja.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Paloma de guayaba</h4>
+                  <span class="menu-item__price">$150</span>
+                </div>
+                <p>Tequila reposado, guayaba asada, toronja y un toque de romero.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Old Fashioned de mezcal</h4>
+                  <span class="menu-item__price">$210</span>
+                </div>
+                <p>Mezcal joven, piloncillo, bitters de mole y naranja quemada.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Cerveza artesanal de la casa</h4>
+                  <span class="menu-item__price">$95</span>
+                </div>
+                <p>Lager ámbar elaborada para Tina por una cervecería local.</p>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item__head">
+                  <h4>Agua de jamaica con hibiscos</h4>
+                  <span class="menu-item__price">$70</span>
+                </div>
+                <p>Infusión de la casa, un toque de jengibre.</p>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+
+<section class="specialties" id="promociones">
+      <div class="specialties__blob" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Especialidades</p>
+        <h2 class="section-title section-title--center section-title--light">Promociones <span class="script">de la semana</span></h2>
+        <p class="section-lead section-lead--light" style="text-align:center; max-width:640px; margin:0 auto;">Cada día tiene su propio fuego. Ven y vive una razón distinta para visitarnos.</p>
+ 
+        <div class="specialties__grid">
+ 
+          <article class="spec-card">
+            <div class="spec-card__img">
+              <span class="spec-card__badge spec-card__badge--wine">Lunes</span>
+              <img src="imagenes/promociones/Lunes.jpeg" alt="Promoción de lunes en La Tina Cantina" loading="lazy">
+            </div>
+            <div class="spec-card__body">
+              <h3>Lunes de brasa</h3>
+              <p>2x1 en tacos de la casa toda la noche. Ideal para arrancar la semana con fuego.</p>
+              <span class="spec-card__price">2x1</span>
+            </div>
+          </article>
+ 
+          <article class="spec-card">
+            <div class="spec-card__img">
+              <span class="spec-card__badge spec-card__badge--teal">Martes</span>
+              <img src="imagenes/promociones/Martes.jpeg" alt="Promoción de martes en La Tina Cantina" loading="lazy">
+            </div>
+            <div class="spec-card__body">
+              <h3>Martes de mezcal</h3>
+              <p>Flight de mezcales artesanales de Oaxaca con 20% de descuento.</p>
+              <span class="spec-card__price">-20%</span>
+            </div>
+          </article>
+ 
+          <article class="spec-card">
+            <div class="spec-card__img">
+              <span class="spec-card__badge spec-card__badge--amber">Miércoles</span>
+              <img src="imagenes/promociones/Miercoles.jpeg" alt="Promoción de miércoles en La Tina Cantina" loading="lazy">
+            </div>
+            <div class="spec-card__body">
+              <h3>Miércoles de amigos</h3>
+              <p>Torre de micheladas y botana de la casa para compartir en grupo.</p>
+              <span class="spec-card__price">Grupal</span>
+            </div>
+          </article>
+ 
+          <article class="spec-card">
+            <div class="spec-card__img">
+              <span class="spec-card__badge spec-card__badge--gold">Jueves</span>
+              <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=700&q=80" alt="Promoción de jueves en La Tina Cantina" loading="lazy">
+            </div>
+            <div class="spec-card__body">
+              <h3>Jueves de mariachi</h3>
+              <p>Trío en vivo desde las 20:00 h y coctelería de temporada.</p>
+              <span class="spec-card__price">En vivo</span>
+            </div>
+          </article>
+ 
+          <article class="spec-card">
+            <div class="spec-card__img">
+              <span class="spec-card__badge spec-card__badge--wine">Viernes y sábado</span>
+              <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=700&q=80" alt="Promoción de fin de semana en La Tina Cantina" loading="lazy">
+            </div>
+            <div class="spec-card__body">
+              <h3>Noche de barra</h3>
+              <p>DJ en vivo, coctelería de autor y ambiente hasta la madrugada.</p>
+              <span class="spec-card__price">Reserva</span>
+            </div>
+          </article>
+ 
+          <article class="spec-card">
+            <div class="spec-card__img">
+              <span class="spec-card__badge spec-card__badge--teal">Domingo</span>
+              <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=700&q=80" alt="Promoción de domingo en La Tina Cantina" loading="lazy">
+            </div>
+            <div class="spec-card__body">
+              <h3>Domingo familiar</h3>
+              <p>Menú familiar de brasa para compartir, ideal para cerrar la semana en casa.</p>
+              <span class="spec-card__price">Familiar</span>
+            </div>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+
+<section class="gallery" id="galeria">
+      <div class="gallery__blob" aria-hidden="true"></div>
+      <div class="gallery__blob-2" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Un vistazo</p>
+        <h2 class="section-title section-title--center">Galería <span class="script">La Tina Cantina</span></h2>
+      </div>
+ 
+      <div class="gallery__grid" id="galleryGrid">
+        <button class="gallery__item reveal-zoom" data-full="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=1600&q=85" data-caption="Salón principal al atardecer">
+          <div class="gallery__item-media">
+            <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=700&q=80" alt="Salón principal de La Tina Cantina al atardecer" loading="lazy">
+          </div>
+          <div class="gallery__item-frame" aria-hidden="true"></div>
+          <span class="gallery__item-cap"><i class="fa-solid fa-fire"></i> Salón principal</span>
+        </button>
+        <button class="gallery__item reveal-zoom" data-full="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1600&q=85" data-caption="Tacos servidos en comal de barro">
+          <div class="gallery__item-media">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80" alt="Tacos servidos en comal de barro" loading="lazy">
+          </div>
+          <div class="gallery__item-frame" aria-hidden="true"></div>
+          <span class="gallery__item-cap"><i class="fa-solid fa-utensils"></i> Comal de barro</span>
+        </button>
+        <button class="gallery__item reveal-zoom" data-full="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=1600&q=85" data-caption="Mesa mexicana servida">
+          <div class="gallery__item-media">
+            <img src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=700&q=80" alt="Mesa mexicana servida con variedad de platillos" loading="lazy">
+          </div>
+          <div class="gallery__item-frame" aria-hidden="true"></div>
+          <span class="gallery__item-cap"><i class="fa-solid fa-plate-wheat"></i> Mesa servida</span>
+        </button>
+        <button class="gallery__item reveal-zoom" data-full="https://images.unsplash.com/photo-1547595628-c61a29f496f0?auto=format&fit=crop&w=1600&q=85" data-caption="Barra de mezcales artesanales">
+          <div class="gallery__item-media">
+            <img src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?auto=format&fit=crop&w=700&q=80" alt="Barra de mezcales artesanales" loading="lazy">
+          </div>
+          <div class="gallery__item-frame" aria-hidden="true"></div>
+          <span class="gallery__item-cap"><i class="fa-solid fa-martini-glass-citrus"></i> Barra de mezcales</span>
+        </button>
+        <button class="gallery__item reveal-zoom" data-full="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1600&q=85" data-caption="Brasas de mezquite en cocina abierta">
+          <div class="gallery__item-media">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=700&q=80" alt="Brasas de mezquite en cocina abierta" loading="lazy">
+          </div>
+          <div class="gallery__item-frame" aria-hidden="true"></div>
+          <span class="gallery__item-cap"><i class="fa-solid fa-fire-flame-curved"></i> Cocina abierta</span>
+        </button>
+        <button class="gallery__item reveal-zoom" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=85" data-caption="Ambiente cálido de la cantina">
+          <div class="gallery__item-media">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80" alt="Ambiente cálido con velas de la cantina" loading="lazy">
+          </div>
+          <div class="gallery__item-frame" aria-hidden="true"></div>
+          <span class="gallery__item-cap"><i class="fa-solid fa-champagne-glasses"></i> Ambiente cálido</span>
+        </button>
+      </div>
+    </section>
+ 
+<!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visor de imágenes de la galería">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar visor">&times;</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Imagen anterior"><i class="fa-solid fa-chevron-left"></i></button>
+      <figure class="lightbox__figure">
+        <img src="" alt="" id="lightboxImg">
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Imagen siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+<section class="contact" id="contacto">
+      <div class="contact__blob" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Encuéntranos</p>
+        <h2 class="section-title section-title--center">Visítanos <span class="script">hoy</span></h2>
+ 
+        <div class="contact__grid">
+          <div class="contact__info reveal-up">
+            <ul class="contact__list">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <div><strong>Dirección</strong><span>Av. de los Insurgentes 234, Roma Norte, CDMX</span></div>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <div><strong>Teléfono</strong><span>+52 55 1234 5678</span></div>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <div><strong>Correo</strong><span>hola@tinacantina.mx</span></div>
+              </li>
+              <li>
+                <i class="fa-regular fa-clock"></i>
+                <div><strong>Horario</strong><span>Lunes a domingo · 13:00 – 23:00 h</span></div>
+              </li>
+            </ul>
+ 
+            <div class="contact__social">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram de La Tina Cantina"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook de La Tina Cantina"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok de La Tina Cantina"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://wa.me/525512345678" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de La Tina Cantina"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+ 
+          <div class="contact__map reveal-up">
+            <iframe
+              title="Ubicación de La Tina Cantina en el mapa"
+              src="https://maps.google.com/maps?q=Roma%20Norte%2C%20Ciudad%20de%20M%C3%A9xico&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- ============ FOOTER ============ -->
+<footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#inicio" class="navbar__brand">
+          <img src="imagenes/menu/logo-nav.jpeg" alt="La Tina Cantina" class="footer__brand-logo" width="84" height="84">
+        </a>
+        <p>Cocina mexicana de autor. Fuego, maíz y mezcal desde 2011.</p>
+      </div>
+ 
+      <nav class="footer__links" aria-label="Enlaces rápidos">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#promociones">Especialidades</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+ 
+      <div class="footer__hours">
+        <h4>Horario</h4>
+        <p>Lunes a domingo</p>
+        <p>13:00 – 23:00 h</p>
+        <h4>Síguenos</h4>
+        <div class="contact__social contact__social--footer">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> La Tina Cantina. Todos los derechos reservados.</p>
+      <p>Diseñado con fuego 🔥 y maíz.</p>
+    </div>
+  </footer>
+ 
+<!-- ============ BOTONES FLOTANTES ============ -->
+  <a href="https://wa.me/525512345678" class="float-btn float-btn--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+ 
+  <button class="float-btn float-btn--top" id="backToTop" aria-label="Volver al inicio">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+ 
+ 
+  <!-- ============ SCRIPTS ============ -->
+  <script src="js/script.js"></script>
+</body>
+</html>
