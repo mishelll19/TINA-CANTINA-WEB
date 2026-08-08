@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú | La Tina Cantina</title>
+  <meta name="description" content="Descubre el menú de La Tina Cantina: entradas, platos fuertes, postres y barra de mezcales.">
+  <meta name="keywords" content="Restaurante - Bar.">
+  <meta name="author" content="La Tina Cantina">
+ 
+  <!-- Open Graph / SEO social -->
+  <meta property="og:title" content="Menú | La Tina Cantina">
+  <meta property="og:description" content="Descubre el menú de La Tina Cantina: entradas, platos fuertes, postres y barra de mezcales.">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:image" content="../imagenes/menu/logo-nav.jpeg">
+ 
+  <link rel="icon" type="image/png" href="../imagenes/menu/logo-nav.jpeg">
+  <link rel="apple-touch-icon" href="../imagenes/menu/logo-nav.jpeg">
+ 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Poppins:wght@300;400;500;600;700&family=Alex+Brush&display=swap" rel="stylesheet">
+ 
+  <!-- Font Awesome (solo iconografía) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+ 
+<!-- ============ LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <span class="loader__ring"></span>
+      <span class="loader__glyph">TC</span>
+    </div>
+    <p class="loader__text">Encendiendo el comal…</p>
+  </div>
+ 
+ 
+  <!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__brand">
+        <img src="../imagenes/menu/logo-nav.jpeg" alt="La Tina Cantina" class="navbar__brand-logo" width="52" height="52">
+        <span class="navbar__brand-text">La Tina Cantina<small>Restaurante &amp; Bar</small></span>
+      </a>
+ 
+      <nav class="navbar__nav" id="navMenu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li><a href="empresa.html" class="nav-link">Historia</a></li>
+          <li><a href="menu.html" class="nav-link">Menú</a></li>
+          <li><a href="menu.html#bebidas" class="nav-link">Bebidas</a></li>
+          <li><a href="promociones.html" class="nav-link">Especialidades</a></li>
+          <li><a href="galeria.html" class="nav-link">Galería</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="contacto.html" class="btn btn--gold btn--small navbar__cta">Visítanos</a>
+      </nav>
+ 
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+ 
+  <main id="top">
+
+<section class="menu-section" id="menu">
+      <div class="menu-section__blob" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Carta</p>
+        <h2 class="section-title section-title--center section-title--light">Nuestro <span class="script">menú</span></h2>
+        <p class="section-lead section-lead--light">Del comal a la mesa: entradas, caldos, tacos y las joyas de la casa.</p>
+ 
+        <div class="menu-tabs" role="tablist" aria-label="Categorías del menú">
+          <button class="menu-tab menu-tab--gold active" role="tab" aria-selected="true" data-tab="entradas"><i class="fa-solid fa-leaf"></i> Entradas</button>
+          <button class="menu-tab menu-tab--wine" role="tab" aria-selected="false" data-tab="caldos"><i class="fa-solid fa-bowl-food"></i> Caldos</button>
+          <button class="menu-tab menu-tab--teal" role="tab" aria-selected="false" data-tab="sugerencias-chef"><i class="fa-solid fa-star"></i> Sugerencias del Chef</button>
+          <button class="menu-tab menu-tab--magenta" role="tab" aria-selected="false" data-tab="tacos"><i class="fa-solid fa-fire"></i> Tacos</button>
+          <button class="menu-tab menu-tab--gold" role="tab" aria-selected="false" data-tab="gringas"><i class="fa-solid fa-layer-group"></i> Gringas</button>
+          <button class="menu-tab menu-tab--wine" role="tab" aria-selected="false" data-tab="costras"><i class="fa-solid fa-drumstick-bite"></i> Costras</button>
+          <button class="menu-tab menu-tab--teal" role="tab" aria-selected="false" data-tab="joyas-casa"><i class="fa-solid fa-gem"></i> Joyas de la Casa</button>
+          <button class="menu-tab menu-tab--magenta" role="tab" aria-selected="false" data-tab="lo-nuevo"><i class="fa-solid fa-bolt"></i> Lo Nuevo</button>
+          <button class="menu-tab menu-tab--gold" role="tab" aria-selected="false" data-tab="postres"><i class="fa-solid fa-cookie-bite"></i> Postres</button>
+        </div>
+ 
+        <div class="menu-panels">
+ 
+          <div class="menu-panel active" id="entradas" role="tabpanel">
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Salchicha, Queso y Aceitunas</h4>
+                  <span class="menu-item__price">400 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Salchicha de res y papas bravas bañadas en salsa brava</h4>
+                  <span class="menu-item__price">390 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Queso panela frito acompañado de guacamole</h4>
+                  <span class="menu-item__price">200 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Cazuela de butifarras y platanito</h4>
+                  <span class="menu-item__price">5 pzs</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Aceitunas</h4>
+                  <span class="menu-item__price">70 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Frijoles meneados</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Guacamole</h4>
+                  <span class="menu-item__price">200 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Queso fundido</h4>
+                  <span class="menu-item__price">200 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Bolsita de chicharrón</h4>
+                  <span class="menu-item__price">100 gr</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="caldos" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Frijol con puerco</h4>
+                  <span class="menu-item__price">250 ml</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Mondongo</h4>
+                  <span class="menu-item__price">250 ml</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Birria</h4>
+                  <span class="menu-item__price">250 ml</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Birriamen</h4>
+                  <span class="menu-item__price">250 ml</span>
+                </div>
+              </li>
+            </ul>
+          </div>                  
+
+         <div class="menu-panel" id="sugerencias-chef" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Castacán con guacamole</h4>
+                  <span class="menu-item__price">130 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Sesadilla</h4>
+                  <span class="menu-item__price">30 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Sesuadero</h4>
+                  <span class="menu-item__price">30 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Flauta de pollo</h4>
+                  <span class="menu-item__price">3 pzas</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Patitas en escabeche</h4>
+                  <span class="menu-item__price">300 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Chicharrón de molleja con guacamole</h4>
+                  <span class="menu-item__price">390 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Aguachile verde de camarón</h4>
+                  <span class="menu-item__price">200 gr</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="tacos" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Pastor</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Bistec</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Birria</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Suadero</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Cecina</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Castacán</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Tripa</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Arrachera</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Cuerito</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Surtida</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Maciza</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Campechano</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Taco Mar y Tierra</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Taco de Suadero con Tripa</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="gringas" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Camarón</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Mar y Tierra</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Arrachera</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Bistec</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Quesabirria</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Longaniza</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Pastor</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Tripa</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Quesadilla</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="costras" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Costra de queso Gouda</h4>
+                  <span class="menu-item__price">120 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Arrachera</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Bistec</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Birria</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Pastor</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Mar y Tierra</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="joyas-casa" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Maciza</h4>
+                  <span class="menu-item__price">250 gr / 500 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Surtida</h4>
+                  <span class="menu-item__price">250 gr / 500 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Cuerito</h4>
+                  <span class="menu-item__price">250 gr / 500 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Castacán</h4>
+                  <span class="menu-item__price">250 gr / 500 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Birria</h4>
+                  <span class="menu-item__price">250 gr / 500 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Arrachera</h4>
+                  <span class="menu-item__price">250 gr / 500 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Pastor</h4>
+                  <span class="menu-item__price">250 gr / 500 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Barbacoa de costilla</h4>
+                  <span class="menu-item__price">250 gr / 500 gr</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Costilla al mojo de ajo</h4>
+                  <span class="menu-item__price">250 gr / 500 gr</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="lo-nuevo" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Taco de Ribeye</h4>
+                  <span class="menu-item__price">(1 pza)</span>
+                </div>
+                <p>Tortilla de harina, costra de queso, frijoles y chile chilaca.</p>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Volcán de Arrachera</h4>
+                  <span class="menu-item__price">(1 pza)</span>
+                </div>
+                <p>Tortilla nixtamalizada frita, costra de queso y salsa mexicana.</p>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Taco de Picaña</h4>
+                  <span class="menu-item__price">(1 pza)</span>
+                </div>
+                <p>Con chicharrón prensado.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="postres" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Flan napolitano</h4>
+                  <span class="menu-item__price">(1 pza)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Torrejitas de yuca</h4>
+                  <span class="menu-item__price">(5 pzas)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Plátano con crema</h4>
+                  <span class="menu-item__price">(2 pzas)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Plátano con chicharrón</h4>
+                  <span class="menu-item__price">(2 pzas)</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+
+<section class="menu-section" id="bebidas">
+      <div class="menu-section__blob" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Barra</p>
+        <h2 class="section-title section-title--center section-title--light">Nuestras <span class="script">bebidas</span></h2>
+        <p class="section-lead section-lead--light">Chelas, cocteles, mezcal y destilados para acompañar cada tiempo.</p>
+ 
+        <div class="menu-tabs" role="tablist" aria-label="Categorías de bebidas">
+          <button class="menu-tab menu-tab--gold active" role="tab" aria-selected="true" data-tab="chelas-caguamas"><i class="fa-solid fa-beer-mug-empty"></i> Chelas y Caguamas</button>
+          <button class="menu-tab menu-tab--wine" role="tab" aria-selected="false" data-tab="cuartitos"><i class="fa-solid fa-glass-water"></i> Cuartitos</button>
+          <button class="menu-tab menu-tab--teal" role="tab" aria-selected="false" data-tab="preparados"><i class="fa-solid fa-martini-glass-citrus"></i> Preparados</button>
+          <button class="menu-tab menu-tab--magenta" role="tab" aria-selected="false" data-tab="refrescos"><i class="fa-solid fa-bottle-water"></i> Refrescos</button>
+          <button class="menu-tab menu-tab--gold" role="tab" aria-selected="false" data-tab="aguas"><i class="fa-solid fa-glass-water"></i> Aguas</button>
+          <button class="menu-tab menu-tab--wine" role="tab" aria-selected="false" data-tab="jarras"><i class="fa-solid fa-mug-saucer"></i> Jarras</button>
+          <button class="menu-tab menu-tab--teal" role="tab" aria-selected="false" data-tab="cafes"><i class="fa-solid fa-mug-hot"></i> Cafés</button>
+          <button class="menu-tab menu-tab--magenta" role="tab" aria-selected="false" data-tab="cocteles"><i class="fa-solid fa-martini-glass"></i> Cócteles</button>
+          <button class="menu-tab menu-tab--gold" role="tab" aria-selected="false" data-tab="licor"><i class="fa-solid fa-wine-bottle"></i> Licor</button>
+          <button class="menu-tab menu-tab--wine" role="tab" aria-selected="false" data-tab="mezcal"><i class="fa-solid fa-wine-bottle"></i> Mezcal</button>
+          <button class="menu-tab menu-tab--teal" role="tab" aria-selected="false" data-tab="vodka"><i class="fa-solid fa-martini-glass-empty"></i> Vodka</button>
+          <button class="menu-tab menu-tab--magenta" role="tab" aria-selected="false" data-tab="ginebra"><i class="fa-solid fa-martini-glass-empty"></i> Ginebra</button>
+          <button class="menu-tab menu-tab--gold" role="tab" aria-selected="false" data-tab="tequila"><i class="fa-solid fa-whiskey-glass"></i> Tequila</button>
+          <button class="menu-tab menu-tab--wine" role="tab" aria-selected="false" data-tab="ron"><i class="fa-solid fa-whiskey-glass"></i> Ron</button>
+          <button class="menu-tab menu-tab--teal" role="tab" aria-selected="false" data-tab="whisky"><i class="fa-solid fa-whiskey-glass"></i> Whisky</button>
+        </div>
+ 
+        <div class="menu-panels">
+ 
+          <div class="menu-panel active" id="chelas-caguamas" role="tabpanel">
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Cervezas</h4>
+                  <span class="menu-item__price">(355 ml)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Indio</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Tecate</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Tecate Light</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Tecate Cero</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Ultra</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Lager Ultra</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>XX Ámbar</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>XX Lager</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Miller</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Bohemia Clara</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Bohemia Cristal</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Bohemia Oscura</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Heineken</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Heineken Silver</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Heineken Cero</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Miller</h4>
+                  <span class="menu-item__price">(940 ml)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Indio</h4>
+                  <span class="menu-item__price">(1200 ml)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Superior</h4>
+                  <span class="menu-item__price">(1 l)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Tecate Light</h4>
+                  <span class="menu-item__price">(1.2 l)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>XX Lager</h4>
+                  <span class="menu-item__price">(1200 ml)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Heineken</h4>
+                  <span class="menu-item__price">(1 l)</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="cuartitos" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Tecate Light</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Indio</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>XX Lager</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Ultra</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="preparados" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Chelada</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Michelada</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Michelato</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Miche mango/fresa</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Miche hora azul</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Clamato natural</h4>
+                  <span class="menu-item__price">(630 ml)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Ojo rojo con tequila</h4>
+                  <span class="menu-item__price">(630 ml)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Cervechelada clara y oscura</h4>
+                  <span class="menu-item__price">(900 ml)</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="refrescos" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Refrescos varios</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Agua natural Ciel</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Perrier</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Red Bull</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="aguas" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Vaso de horchata</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Vaso limonada mineral</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Vaso limonada natural</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Vaso naranjada mineral</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Vaso naranjada natural</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Vaso maracuyá</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Vaso matalí</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="jarras" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Limonada natural</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Naranjada natural</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Matalí natural</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Maracuyá natural</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Limonada mineral</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Naranjada mineral</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Horchata</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="cafes" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Americano</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Capuchino</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Espresso</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Espresso doble</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="cocteles" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Cantarito</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Cantarito gigante</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Mango Spicy</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Piña Colada</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Margarita clásica</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Margarita maracuyá</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Azulito</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Pantera Rosa</h4>
+                  <span class="menu-item__price">(medias de seda)</span>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Bob Esponja</h4>
+                  <span class="menu-item__price">(mezcalita maracuyá)</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="licor" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Baileys</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Chinchón dulce</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Chinchón seco</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Licor 43</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Vaccari Negro</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Carajillo</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Carajillo Baileys</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Niño de Oro</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="mezcal" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Unión Mezcal</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>400 Conejos Reposado</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>400 Conejos Joven</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Alarás Espadín</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Montelobos Espadín</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="vodka" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Smirnoff Guava</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Smirnoff Tamarindo</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Smirnoff</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Stolichnaya</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Grey Goose</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="ginebra" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Tanqueray</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Beefeater</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Hendrick's</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="tequila" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Don Julio 70</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Don Julio Reposado</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Julio Blanco</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Cuervo Tradicional</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Dobel Diamante</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Herradura Reposado</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>1800 Diamante Cristalino</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="ron" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Bacardí Blanco</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Bacardí Mango Chile</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Matusalem Clásico</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Zacapa 23</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Capitán Morgan</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Flor de Caña 7</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-panel" id="whisky" role="tabpanel" hidden>
+            <ul class="menu-list menu-list--simple">
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>J.W. Etiqueta Negra</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>J.W. Etiqueta Roja</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Buchanan's Piña</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Buchanan's 12</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Buchanan's 18</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Glenfiddich 12</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Macallan 12</h4>
+                </div>
+              </li>
+              <li class="menu-item menu-item--simple">
+                <div class="menu-item__head menu-item__head--simple">
+                  <h4>Black and White</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+  <!-- ============ FOOTER ============ -->
+<footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="navbar__brand">
+          <img src="../imagenes/menu/logo-nav.jpeg" alt="La Tina Cantina" class="footer__brand-logo" width="84" height="84">
+        </a>
+        <p>Restaurante Bar de comida Tradicional Mexicana</p>
+      </div>
+ 
+      <nav class="footer__links" aria-label="Enlaces rápidos">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="empresa.html">Historia</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="menu.html#bebidas">Bebidas</a></li>
+          <li><a href="promociones.html">Especialidades</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+ 
+      <div class="footer__hours">
+        <h4>Horario</h4>
+        <p>Lunes a Viernes</p>
+        <p>11:00 pm – 1:00 am</p>
+        <p>Domingo</p>
+        <p>11:00 am – 11:00 pm</p>
+        <h4>Síguenos</h4>
+        <div class="contact__social contact__social--footer">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> La Tina Cantina. Todos los derechos reservados.</p>
+      <p>L · T</p>
+    </div>
+  </footer>
+ 
+<!-- ============ BOTONES FLOTANTES ============ -->
+  <button class="float-btn float-btn--top" id="backToTop" aria-label="Volver al inicio">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+ 
+ 
+  <!-- ============ SCRIPTS ============ -->
+  <script src="../js/script.js"></script>
+</body>
+</html>
