@@ -7,9 +7,16 @@
 @media (max-width: 920px) {
   .navbar__nav {
     position: fixed; inset: 68px 0 0 0;
+    /* .navbar tiene backdrop-filter, lo que convierte a .navbar en el
+       contenedor de posicionamiento de este elemento fixed (en vez del
+       viewport). Se fija la altura explícitamente en unidades de viewport
+       para que el panel cubra siempre la pantalla completa y no deje ver
+       el contenido de fondo. */
+    height: calc(100vh - 68px);
     background: rgba(17,15,14,.98);
     flex-direction: column; justify-content: flex-start;
     padding: 2.4rem 1.6rem;
+    overflow-y: auto;
     transform: translateX(100%);
     transition: transform var(--transition);
   }

@@ -333,6 +333,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .hero {
   position: relative;
   min-height: 100vh;
+  padding-top: var(--navbar-h);
   display: flex; align-items: center; justify-content: center;
   overflow: hidden;
   text-align: center;
