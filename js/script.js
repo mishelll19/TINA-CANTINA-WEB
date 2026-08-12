@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
  
   // Cierra el menú móvil al elegir un enlace
-  document.querySelectorAll('.nav-link, .navbar__cta').forEach(link => {
+  document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
       navMenu.classList.remove('open');
       navToggle.classList.remove('open');
@@ -196,59 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
  
-  /* ---------- LLUVIA DE GALLITOS (solo página principal) ----------
-     Se ejecuta únicamente al cargar o recargar index.html: el contenedor
-     #lluviaGallos solo existe en esa página, así que en el resto del sitio
-     este bloque no hace nada. Genera entre 25 y 40 gallitos con tamaño,
-     velocidad, duración y posición horizontal aleatorios, y los elimina
-     del DOM al terminar su caída para no dejar nodos residuales. */
-  const lluviaGallos = document.getElementById('lluviaGallos');
-  const prefersReducedMotionGallos = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  if (lluviaGallos && !prefersReducedMotionGallos) {
-    const GALLITO_IMAGES = [
-      'imagenes/gallitos/gallito-gold.png',
-      'imagenes/gallitos/gallito-wine.png',
-      'imagenes/gallitos/gallito-teal.png',
-      'imagenes/gallitos/gallito-magenta.png',
-    ];
-
-    const TOTAL_GALLITOS = Math.floor(Math.random() * (40 - 25 + 1)) + 25; // entre 25 y 40
-
-    for (let i = 0; i < TOTAL_GALLITOS; i++) {
-      const gallito = document.createElement('img');
-      gallito.className = 'gallito';
-      gallito.src = GALLITO_IMAGES[Math.floor(Math.random() * GALLITO_IMAGES.length)];
-      gallito.alt = '';
-      gallito.setAttribute('aria-hidden', 'true');
-
-      const size = Math.random() * (46 - 20) + 20; // tamaño entre 20 y 46px
-      const duration = Math.random() * (7 - 3.5) + 3.5; // duración entre 3.5s y 7s
-      const delay = Math.random() * 1.4; // pequeño escalonado de entrada
-      const leftPos = Math.random() * 100; // posición horizontal aleatoria (0-100%)
-      const flip = Math.random() < 0.5 ? -1 : 1; // variación de orientación
-
-      gallito.style.left = `${leftPos}vw`;
-      gallito.style.width = `${size}px`;
-      gallito.style.height = 'auto';
-      gallito.style.animationDuration = `${duration}s`;
-      gallito.style.animationDelay = `${delay}s`;
-      gallito.style.transform = `scaleX(${flip})`;
-
-      // Elimina cada gallito del DOM en cuanto termina su propia animación
-      gallito.addEventListener('animationend', () => gallito.remove());
-
-      lluviaGallos.appendChild(gallito);
-    }
-
-    // Red de seguridad: si por algún motivo 'animationend' no dispara en
-    // algún elemento, se limpia el contenedor completo poco después de que
-    // el gallito más lento debería haber terminado.
-    setTimeout(() => {
-      lluviaGallos.innerHTML = '';
-    }, 9000);
-  }
-
   /* ---------- MICROINTERACCIONES PREMIUM (v2 rediseño) ----------
      Bloque añadido sin modificar la lógica anterior: tilt 3D suave en
      tarjetas y efecto "magnético" en botones. Se desactiva en pantallas
@@ -385,4 +332,3 @@ function lluviaDeGallos(cantidad = 24, duracionTotal = 4500) {
  
   setTimeout(() => contenedor.remove(), duracionTotal + 4000);
 }
- 
