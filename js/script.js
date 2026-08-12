@@ -385,3 +385,4 @@ function lluviaDeGallos(cantidad = 24, duracionTotal = 4500) {
  
   setTimeout(() => contenedor.remove(), duracionTotal + 4000);
 }
+ 

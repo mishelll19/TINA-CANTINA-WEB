@@ -1014,16 +1014,14 @@ blockquote {
   font-size: 1.5rem; box-shadow: 0 14px 28px -10px rgba(0,0,0,.55);
   transition: transform var(--ease-premium), opacity var(--transition), visibility var(--transition), box-shadow var(--ease-premium);
 }
-.float-btn--whatsapp { bottom: 96px; background: #25D366; color: #fff; animation: pulse 2.6s ease-in-out infinite; }
-.float-btn--whatsapp:hover { transform: scale(1.12) rotate(-6deg); }
 .float-btn--top {
   bottom: 26px; background: var(--grad-gold); color: var(--c-black); font-size: 1.1rem;
   opacity: 0; visibility: hidden; transform: translateY(12px);
 }
 .float-btn--top.show { opacity: 1; visibility: visible; transform: translateY(0); }
-.float-btn--top:hover { filter: brightness(1.08); transform: translateY(-4px) scale(1.08); box-shadow: 0 16px 30px -10px rgba(212,175,55,.5); }
-@keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(37,211,102,.5); } 50% { box-shadow: 0 0 0 12px rgba(37,211,102,0); } }
+.float-btn--top:hover { filter: brightness(1.08); transform: translateY(-4px) scale(1.08); box-shadow: 0 16px 30px -10px rgba(201, 212, 55, 0.5); }
  
+
 /* ---------- 15. ANIMACIONES SCROLL-REVEAL ---------- */
 .fade-in, .reveal-up, .reveal-left, .reveal-right, .reveal-zoom {
   opacity: 0;
