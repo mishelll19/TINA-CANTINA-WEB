@@ -2,9 +2,12 @@
   .specialties__grid { grid-template-columns: repeat(2, 1fr); }
   .contact-cards, .address-cards { grid-template-columns: repeat(2, 1fr); }
   .gallery__grid { grid-auto-rows: 220px; }
-}
- 
-@media (max-width: 920px) {
+
+  /* Entre 921px y 1080px el texto de la marca ("La Tina Cantina") choca
+     con el primer enlace del menú ("Inicio") porque no queda espacio
+     suficiente para los 8 enlaces + marca + botón CTA en una sola fila.
+     Se adelanta aquí el mismo menú móvil (hamburguesa) que ya existía
+     a partir de 920px, en lugar de crear un mecanismo nuevo. */
   .navbar__nav {
     position: fixed; inset: 68px 0 0 0;
     /* .navbar tiene backdrop-filter, lo que convierte a .navbar en el
@@ -23,9 +26,10 @@
   .navbar__nav.open { transform: translateX(0); }
   .navbar__nav ul { flex-direction: column; gap: 1.4rem; width: 100%; }
   .navbar__nav ul li { border-bottom: 1px solid rgba(255,255,255,.08); padding-bottom: 1rem; }
-  .navbar__cta { margin-top: 1.6rem; width: 100%; }
   .navbar__toggle { display: flex; }
+}
  
+@media (max-width: 920px) {
   .story__grid { grid-template-columns: 1fr; }
   .story__media { max-width: 420px; margin: 0 auto; }
  

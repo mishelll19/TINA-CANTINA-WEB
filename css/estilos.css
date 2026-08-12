@@ -37,7 +37,7 @@
   --grad-section-gallery: radial-gradient(circle at 20% 15%, #0f4a44 0%, #113632 45%, #0c1f1f 100%);
   --grad-section-contact: radial-gradient(circle at 85% 85%, #123a52 0%, #14273a 45%, #0d1a26 100%);
   --grad-section-footer: radial-gradient(circle at 50% 0%, #3a1424 0%, #241428 45%, #150e1d 100%);
-
+ 
   /* Superficies glass */
   --glass-bg: rgba(255,255,255,.045);
   --glass-bg-strong: rgba(255,255,255,.07);
@@ -318,7 +318,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 }
 .nav-link:hover, .nav-link.active-link { color: var(--c-white); }
 .nav-link:hover::after, .nav-link.active-link::after { width: 100%; }
-.navbar__cta { flex-shrink: 0; }
  
 .navbar__toggle {
   display: none; flex-direction: column; gap: 5px;
@@ -821,7 +820,7 @@ blockquote {
 }
 .gallery__item:hover img { transform: scale(1.1); filter: saturate(1.22) contrast(1.05); }
 
-/* Imágenes de Galeria (banners con texto): deben verse completas, sin recorte */
+/* Imágenes de Promociones (banners con texto): deben verse completas, sin recorte */
 .gallery__item[data-full*="/promociones/"] .gallery__item-media { background: rgba(0,0,0,.35); }
 .gallery__item[data-full*="/promociones/"] img { object-fit: contain; }
 .gallery__item[data-full*="/promociones/"]:hover img { transform: scale(1.04); }
@@ -1014,14 +1013,16 @@ blockquote {
   font-size: 1.5rem; box-shadow: 0 14px 28px -10px rgba(0,0,0,.55);
   transition: transform var(--ease-premium), opacity var(--transition), visibility var(--transition), box-shadow var(--ease-premium);
 }
+.float-btn--whatsapp { bottom: 96px; background: #25D366; color: #fff; animation: pulse 2.6s ease-in-out infinite; }
+.float-btn--whatsapp:hover { transform: scale(1.12) rotate(-6deg); }
 .float-btn--top {
   bottom: 26px; background: var(--grad-gold); color: var(--c-black); font-size: 1.1rem;
   opacity: 0; visibility: hidden; transform: translateY(12px);
 }
 .float-btn--top.show { opacity: 1; visibility: visible; transform: translateY(0); }
-.float-btn--top:hover { filter: brightness(1.08); transform: translateY(-4px) scale(1.08); box-shadow: 0 16px 30px -10px rgba(201, 212, 55, 0.5); }
+.float-btn--top:hover { filter: brightness(1.08); transform: translateY(-4px) scale(1.08); box-shadow: 0 16px 30px -10px rgba(212,175,55,.5); }
+@keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(37,211,102,.5); } 50% { box-shadow: 0 0 0 12px rgba(37,211,102,0); } }
  
-
 /* ---------- 15. ANIMACIONES SCROLL-REVEAL ---------- */
 .fade-in, .reveal-up, .reveal-left, .reveal-right, .reveal-zoom {
   opacity: 0;
