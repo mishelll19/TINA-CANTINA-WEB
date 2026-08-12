@@ -37,7 +37,7 @@
   --grad-section-gallery: radial-gradient(circle at 20% 15%, #0f4a44 0%, #113632 45%, #0c1f1f 100%);
   --grad-section-contact: radial-gradient(circle at 85% 85%, #123a52 0%, #14273a 45%, #0d1a26 100%);
   --grad-section-footer: radial-gradient(circle at 50% 0%, #3a1424 0%, #241428 45%, #150e1d 100%);
- 
+
   /* Superficies glass */
   --glass-bg: rgba(255,255,255,.045);
   --glass-bg-strong: rgba(255,255,255,.07);
@@ -333,6 +333,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
 .hero {
   position: relative;
   min-height: 100vh;
+  padding-top: var(--navbar-h);
   display: flex; align-items: center; justify-content: center;
   overflow: hidden;
   text-align: center;
@@ -371,6 +372,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height
   filter: blur(20px); pointer-events: none; z-index: 1;
   animation: floatBlob 13s ease-in-out infinite reverse;
 }
+
 @keyframes floatBlob { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(30px,-24px) scale(1.08); } }
 .hero__embers {
   position: absolute; inset: 0; pointer-events: none;
@@ -820,7 +822,7 @@ blockquote {
 }
 .gallery__item:hover img { transform: scale(1.1); filter: saturate(1.22) contrast(1.05); }
 
-/* Imágenes de Promociones (banners con texto): deben verse completas, sin recorte */
+/* Imágenes de Galeria (banners con texto): deben verse completas, sin recorte */
 .gallery__item[data-full*="/promociones/"] .gallery__item-media { background: rgba(0,0,0,.35); }
 .gallery__item[data-full*="/promociones/"] img { object-fit: contain; }
 .gallery__item[data-full*="/promociones/"]:hover img { transform: scale(1.04); }
